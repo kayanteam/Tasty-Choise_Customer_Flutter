@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "132036254954",
+    "project_id": "tasty-choise",
+    "storage_bucket": "tasty-choise.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132036254954:android:ddf6528214ec492324cb93",
+        "android_client_info": {
+          "package_name": "com.kayan.Saving_Station_Customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJDUIjZzOuYGsu8cSlYmZsUThcMfvxqAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
