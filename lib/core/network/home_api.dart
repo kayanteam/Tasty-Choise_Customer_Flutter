@@ -100,15 +100,18 @@ class HomeApi {
     }
   }
 
-  EitherType<GeneralResponse> getRestaurants(int? categoryId,
-      {required double? minPrice, required double? maxPrice}) async {
+  EitherType<GeneralResponse> getRestaurants(
+    int? categoryId, {
+    required double? minPrice,
+    required double? maxPrice,
+  }) async {
     try {
       final response = await dio.dio.get(
-        minPrice != null
-            ? categoryId != null
-                ? "${EndPoints.RESTAURANT}?category_id=$categoryId&max_price=$maxPrice&min_price=$minPrice"
-                : "${EndPoints.RESTAURANT}?max_price=$maxPrice&min_price=$minPrice"
-            : "${EndPoints.RESTAURANT}?category_id=$categoryId",
+        categoryId != null
+            ? maxPrice != null
+                ? "${EndPoints.RESTAURANT}?category_id=$categoryId&max_price=${maxPrice.toInt()}&min_price=${minPrice!.toInt()}"
+                : "${EndPoints.RESTAURANT}?category_id=$categoryId}"
+            : "${EndPoints.RESTAURANT}?max_price=${maxPrice!.toInt()}&min_price=${minPrice!.toInt()}",
         options: Options(headers: AppHelpers.getHeader()),
       );
       if (response.statusCode == 200 || response.statusCode == 201) {

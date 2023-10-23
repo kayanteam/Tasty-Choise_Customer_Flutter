@@ -1,3 +1,4 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "cmake.sourceDirectory": "/Users/mhammed/FlutterVSCodeProjects/kyan/tasty_choise_customer/linux"
 }
