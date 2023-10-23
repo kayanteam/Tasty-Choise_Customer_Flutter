@@ -108,13 +108,15 @@ class Home extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 18.h),
-              MyPageView(
-                images: HomeCubit.get(context)
-                    .homeData!
-                    .ads!
-                    .map((e) => e.image ?? "")
-                    .toList(),
-              ),
+              if (HomeCubit.get(context).homeData!.ads != null &&
+                  HomeCubit.get(context).homeData!.ads!.isNotEmpty)
+                MyPageView(
+                  images: HomeCubit.get(context)
+                      .homeData!
+                      .ads!
+                      .map((e) => e.image ?? "")
+                      .toList(),
+                ),
               SizedBox(height: 16.h),
               MyText(
                 title: 'سعر الوجبة',
