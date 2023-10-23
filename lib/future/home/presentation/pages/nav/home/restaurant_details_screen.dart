@@ -86,7 +86,7 @@ class _RestaurantDetailsScreenState extends State<RestaurantDetailsScreen> {
                           ),
                           Center(
                             child: Image.network(
-                              widget.category.icon ?? "",
+                              widget.category.image ?? "",
                               fit: BoxFit.cover,
                               errorBuilder: (context, error, stackTrace) {
                                 return const Center(child: Icon(Icons.error));

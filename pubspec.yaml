@@ -48,7 +48,6 @@ dependencies:
   # ? platforms packages
   package_info_plus: ^4.0.2
   share_plus: ^7.0.2
-  in_app_review: ^2.0.6
   shared_preferences: ^2.2.0
   image_picker: ^1.0.0
   flutter_local_notifications: ^15.0.0
