@@ -101,12 +101,6 @@ class OnBoardingScreen extends StatelessWidget {
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                   ),
-                  SizedBox(height: 14.h),
-                  MyText(
-                    title: 'هذا نص تجريبي لاختبار شكل و حجم النصوص',
-                    fontSize: 12,
-                    fontWeight: FontWeight.w300,
-                  ),
                   Expanded(
                     child: Stack(
                       children: [

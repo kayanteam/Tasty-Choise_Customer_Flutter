@@ -88,7 +88,7 @@ class _RestaurantsScreenState extends State<RestaurantsScreen> {
                         height: 130.h,
                         borderRadius: 8,
                         child: Image.network(
-                          resturants[index].icon ?? "",
+                          resturants[index].image ?? "",
                           errorBuilder: (context, error, stackTrace) {
                             return const Center(
                               child: Icon(Icons.error),
